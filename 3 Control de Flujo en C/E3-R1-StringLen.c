@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-char str[5];
+char str[20];
 int len; 
 
 int main(){
 
-    str[20];
     printf("Enter a String: ");
     gets(str);
 
