@@ -8,7 +8,6 @@ int vowel, len, newlen;
 
 
 void vowelCase(){
-    printf("test\n");
     len = strlen(word);
     newlen = len + 3;
 
@@ -23,7 +22,6 @@ void consonantCase(){
     int i, len = strlen(word);
 
     for(i=1; i<=len; i++){
-        //printf("\ntest: %d\n", i);
         word[i-1] = word[i];
     }
     word[len-1] = temp;    
