@@ -5,8 +5,8 @@ void hello(char* message);
 
 int main(){
 
-    char message[10] = "Bola";
-    hello(message);
+    //char message[10] = "Bola";
+    hello("Bola 2");
     return 0;
 }
 
