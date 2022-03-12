@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "*.tcc": "c",
+        "exception": "c",
+        "limits": "c",
+        "streambuf": "c",
+        "type_traits": "c"
     }
 }
