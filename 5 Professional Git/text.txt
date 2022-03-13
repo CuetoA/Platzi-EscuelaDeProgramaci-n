@@ -1,14 +1,19 @@
+>>>>>>>> HEADER Starts
 Just imagine we modified the header
 Header
+>>>>>>>> HEADER Finishes
 
+
+>>>>>>>> BODY Starts
 Hello frineds!
-
 Hope you're having the nices sunday!
 
 
 Letme introduce myself, I'm Andrés Cueto, Mechatronics Engineer and Entrepreneur at A.V.archery
-
 Made another intentional mistake. Another try
+>>>>>>>> BODY Finishes
 
+
+>>>>>>>> FOOTER Starts
 Imagine that we modified the footer
-
+>>>>>>>> FOOTER Finishes
