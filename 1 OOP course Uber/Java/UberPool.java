@@ -1,4 +1,4 @@
-public class UberPool {
+public class UberPool extends Car {
     String brand;
     String model;
 
