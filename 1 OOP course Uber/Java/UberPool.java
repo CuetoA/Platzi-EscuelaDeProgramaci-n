@@ -1,7 +1,7 @@
 public class UberPool extends Car {
     String brand;
     String model;
-    private Integer passenger;
+    protected Integer passengers;
 
     public UberPool(String license, Account driver, String brand, String model){
         super(license, driver); // This represents the super class constructor
@@ -12,7 +12,7 @@ public class UberPool extends Car {
     @Override
     public void setPassenger(Integer passenger) {
         if(passenger ==6 ){
-            this.passenger = passenger;
+            this.passengers = passenger;
         }else{
             System.out.println("You need to assign 4 passengers");
         }
