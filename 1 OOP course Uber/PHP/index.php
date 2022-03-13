@@ -18,4 +18,3 @@ $uberVan = new UberVan("ADA335", new Account("Ceres Hada", "34"), "hello2", "hel
 $uberVan->setPassenger(6);
 $uberVan->printData();
 ?>
-

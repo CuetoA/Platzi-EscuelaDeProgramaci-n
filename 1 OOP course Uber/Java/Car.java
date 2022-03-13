@@ -54,7 +54,4 @@ public class Car {
     public void setDriver(Account driver) {
         this.driver = driver;
     }
-
-    
-    
 }
