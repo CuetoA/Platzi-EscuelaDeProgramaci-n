@@ -25,10 +25,10 @@ public class Car {
     }
 
     void printDataCar(){
+        System.out.println();
         System.out.println("License: " + license);
         System.out.println("Driver: " + driver.name);
         System.out.println("Passenger: " + passenger);
-        System.out.println();
     }
 
     public Integer getId() {
