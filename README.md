@@ -4,13 +4,16 @@
 
 Welcome to my developer school Repo. Here you'll find everything I've learned during the Programming school at Platzi!
 
-![](https://static.platzi.com/media/learningpath/badges/629b0cdc-424d-41e7-bd2e-98d0ebe52e58.jpg)
+<img src="https://static.platzi.com/media/learningpath/badges/629b0cdc-424d-41e7-bd2e-98d0ebe52e58.jpg" alt="drawing" width="150"/>
 
-**Table of contents**
 
-[TOCM]
+##### Table of Contents  
 
-[TOC]
+- [Algorithms and logic thinking](#headers)
+- [OOP](#headers)  
+- [C](#headers)  
+- [Git](#headers)  
+<a name="headers"/>
 
 ## Algorithms and logic thinking
 Filled some school gaps about logic and alorithms planiation.
