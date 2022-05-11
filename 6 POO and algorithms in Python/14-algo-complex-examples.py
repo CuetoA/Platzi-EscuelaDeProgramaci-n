@@ -47,3 +47,9 @@ def bubbleSort(array):
                 array2[j], array2[j+1] = array2[j+1], array2[j]
     return array2
 
+if __name__ == "__main__":
+    arr = [30, 40, 50, 60, 70, 80, 90, 100, 110]
+    print( binarySearch(arr, 0, len(arr), 90) )
+    print( binarySearch(arr, 0, len(arr), 95) )
+    print( binarySearch(arr, 0, len(arr), 45) )
+    print( binarySearch(arr, 0, len(arr), 30) )
