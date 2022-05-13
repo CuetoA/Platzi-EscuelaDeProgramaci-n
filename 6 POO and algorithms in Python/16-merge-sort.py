@@ -1,17 +1,20 @@
 
 def mergeSort(lista):
     if len(lista) > 1:
+        # Devide the list
         medio = len(lista) // 2
         izquierda = lista[:medio]
         derecha = lista[medio:]
         
-        izquierda = mergeSort(izquierda)
-        derecha = mergeSort(derecha)
+        mergeSort(izquierda)
+        mergeSort(derecha)
         
+        # Start sorting of small array
         i = 0
         j = 0
         k = 0
         
+        # Partiali sort two arrays with remmanents
         while i < len(izquierda) and j < len(derecha):
             if izquierda[i] < derecha[j]:
                 lista[k] = izquierda[i]
@@ -21,6 +24,7 @@ def mergeSort(lista):
                 j += 1
             k += 1
         
+        # Doesn't sort, but put arrays into place
         while i < len(izquierda):
             lista[k] = izquierda[i]
             i += 1
