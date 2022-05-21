@@ -6,3 +6,4 @@ Some resources:
 - [Colors in HTML](https://htmlcolorcodes.com/es/)
 - [Resources for web developers](https://developer.mozilla.org/es/)
 - [Specificity calculator](https://specificity.keegan.st/)
+- [CSS for flecbox tricks](https://css-tricks.com/)
