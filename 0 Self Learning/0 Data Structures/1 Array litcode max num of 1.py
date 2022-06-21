@@ -1,4 +1,5 @@
 input = [1,1,0,0,1,1,1]
+input2 = [1,0,1,1,0,1]
 
 
 def maxConsecutiveNumber(input):
@@ -19,3 +20,4 @@ def maxConsecutiveNumber(input):
 
 if __name__=="__main__":
      print( maxConsecutiveNumber(input) )
+     print( maxConsecutiveNumber(input2) )
