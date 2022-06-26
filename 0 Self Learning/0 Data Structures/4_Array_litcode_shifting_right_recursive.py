@@ -1,13 +1,14 @@
 
-def duplicateZeros(arr):
+def duplicateZeros(arr, s=0):
 
-    if len(arr) == 1: return arr
+    if len(arr) == 1 or s>= len(arr): return arr
 
-    print(f'{arr}')
+    print(f's={s} \t arr={arr}')
     i = 0
     while i <= (len(arr)-1) :
-        if arr[i] == 0:            
-            duplicateZeros(arr[i+1:])
+        if arr[i] == 0:
+            s += 1         
+            duplicateZeros(arr[i+1:], s)
             break
         else:
             i += 1
