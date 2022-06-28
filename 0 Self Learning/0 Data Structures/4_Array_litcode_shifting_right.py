@@ -1,7 +1,3 @@
-arr = [1,0,2,3,0,4,5,0]
-arr2 = [1,2,3]
-
-
 def duplicate_zeros_1(arr):
 
     jump_iteration = False
@@ -35,5 +31,8 @@ def duplicate_zeros_2(arr):
     return arr
 
 if __name__=="__main__":
+    arr = [1,0,2,3,0,4,5,0]
+    arr2 = [1,2,3]
+
     print( duplicate_zeros_2(arr) )
     print( duplicate_zeros_2(arr2) )
