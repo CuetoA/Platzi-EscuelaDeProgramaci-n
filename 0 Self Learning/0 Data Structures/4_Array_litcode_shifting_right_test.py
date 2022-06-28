@@ -16,20 +16,21 @@ if __name__=="__main__":
         arr.append(random.choice(nums))
     arr2 = arr.copy()
     print('created array')
+    print(f'Array len: {len(arr)}')
     # print(f'arr:           {arr}')
 
     print('\nRecursive:')
     s = current_milli_time()
     ans = duplicateZeros(arr)
     f = current_milli_time()
-    print(f'executed time: {f-s}')
+    print(f'executed time: {f-s} ms')
     # print(f'ans:           {ans[0]}')
 
     print('\nNormal:')
     s = current_milli_time()
     ans = duplicate_zeros_2(arr2)
     f = current_milli_time()
-    print(f'executed time: {f-s}')
+    print(f'executed time: {f-s} ms')
     # print(f'ans:           {ans}')
 
 
