@@ -3,7 +3,7 @@ def duplicateZeros(arr, shift_counter=0, end_p = 1):
     arr_size = len(arr)
 
     not_len_enough = (arr_size == 0)
-    not_worth_operation = (shift_counter > arr_size)
+    not_worth_operation = shift_counter> arr_size
     if  not_len_enough or not_worth_operation: return arr, arr_size
 
     i = 0
