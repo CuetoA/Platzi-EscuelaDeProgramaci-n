@@ -18,19 +18,14 @@ def duplicate_zeros_2(arr):
     jump_iteration = False
     for i in range(0, len(arr) - 1):
 
-        # print(f'Jump_iteration: {jump_iteration}')
         if jump_iteration:
-            # print('entrando')
             arr[i] = 0
             jump_iteration = not jump_iteration
             
         elif arr[i] == 0:
             for j in range( len(arr)-1, i, -1):
                 arr[j] = arr[j-1]
-            #arr[i+1] = 0
             jump_iteration = True
-        
-        # print(arr)
         
     return arr
 
