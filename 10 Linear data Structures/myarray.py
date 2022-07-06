@@ -1,7 +1,7 @@
 """Created our own array class
 """
 
-class Array():
+class MyArray():
     def __init__(self, capacity, fill_value=None):
         self.items = list()
         for i in range(capacity):
@@ -30,7 +30,7 @@ class Array():
         
 
 if __name__ == "__main__":
-    menu = Array(5)
+    menu = MyArray(5)
     print(menu.__len__())
     print(menu.__str__())
     print(menu.__iter__())

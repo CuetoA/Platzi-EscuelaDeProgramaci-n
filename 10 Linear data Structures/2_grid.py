@@ -1,10 +1,12 @@
-from .array import Array
+from myarray import MyArray
+
 
 class Grid():
     def __init__(self, rows, columns, fill_value=None) -> None:
-        self.data = Array(rows)
+        self.data = MyArray(rows)
         for row in range(rows):
-            self.data[row] = Array(columns, fill_value)
+            value = MyArray(columns, fill_value)
+            self.data[row] = value
 
     def get_hight(self):
         return len(self.data)
