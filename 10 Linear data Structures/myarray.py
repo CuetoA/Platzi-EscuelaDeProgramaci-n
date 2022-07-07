@@ -1,7 +1,7 @@
 """Created our own array class
 """
 
-class MyArray():
+class MyArray:
     def __init__(self, capacity, fill_value=None):
         self.items = list()
         for i in range(capacity):
@@ -16,11 +16,12 @@ class MyArray():
     def __iter__(self):
         return iter(self.items)
     
-    def __getIntem__(self, index):
+    def __getitem__(self, index):
         return self.items[index]
 
-    def __setIntem__(self, index, newIntem):
-        self.items[index] = newIntem
+    def __setitem__(self, index, newItem):
+        self.items[index] = newItem
+        
 
     def __sum__(self):
         for i in range(self.__len__()):

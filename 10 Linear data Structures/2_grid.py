@@ -4,9 +4,11 @@ from myarray import MyArray
 class Grid():
     def __init__(self, rows, columns, fill_value=None) -> None:
         self.data = MyArray(rows)
+        print(self.data)
+        print(type(self.data))
         for row in range(rows):
-            value = MyArray(columns, fill_value)
-            self.data[row] = value
+            #print(self.data[row])
+            self.data[row] = MyArray(columns, fill_value)
 
     def get_hight(self):
         return len(self.data)
@@ -30,3 +32,4 @@ class Grid():
 if __name__=="__main__":
     matrix = Grid(3,3)
     print(matrix)
+    
