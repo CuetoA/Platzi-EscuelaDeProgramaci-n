@@ -16,7 +16,7 @@ class Grid():
     def get_width(self):
         return len(self.data[0])
 
-    def __get_item__(self, index):
+    def __getitem__(self, index):
         return self.data[index]
     
     def __str__(self):
@@ -32,4 +32,12 @@ class Grid():
 if __name__=="__main__":
     matrix = Grid(3,3)
     print(matrix)
+
+    for row in range( matrix.get_hight()):
+        for column in range( matrix.get_width() ):
+            matrix[row][column] = row * column
+
+    print(matrix)
+    print(matrix[1])
+    print(str(matrix))
     
