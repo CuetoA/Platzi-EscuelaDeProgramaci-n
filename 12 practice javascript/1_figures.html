@@ -7,7 +7,35 @@
     <title>Geometric figures</title>
 </head>
 <body>
-    <h1>Geometric functions</h1>
+    <header>
+        <h1>Geometric functions</h1>
+    </header>
+    <P>First javascript course</P>
+
+    <section>
+        <h2>Calculate perimeter and area of a square</h2>
+        <form >
+            <label> Write the length of your square </label>
+            <input id="square_input" type="number">
+            <button type="button" onclick="get_square_perimeter()"> Calculate perimeter </button>
+            <button type="button" onclick="get_square_area()"> Calculate area </button>
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Calculate perimeter and area of a square</h2>
+        <p>Write the size of the next elements: </p>
+        <form>
+            <label>Side 1</label>
+            <input id="triangle_side1"     type="number"><br>
+            <label>Side 2</label>
+            <input id="triangle_side2"     type="number"><br>
+            <label>Side 3</label>
+            <input id="triangle_side3"     type="number"><br>
+            <button type="button" onclick="getIsocelesHight()">Get height</button>
+        </form>
+    </section>
 
     <script src="1_figures.js"></script>
 </body>
