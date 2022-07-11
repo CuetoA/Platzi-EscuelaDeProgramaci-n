@@ -140,10 +140,21 @@ console.log(module.bye());
 import {hello} from './module';
 module();
 
-
-// -es6
-
+// GENERATORS
 // +es6
+function* helloWorld(){
+    if(true){
+        yield "Hello "
+    }
+    if (true){
+        yield "world"
+    }
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
 
 
 // -es6
