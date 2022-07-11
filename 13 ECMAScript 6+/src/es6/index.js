@@ -49,7 +49,10 @@ let new_team = ['Pablo', ...team1, ...team2]
 console.log(new_team);
 
 
+<<<<<<< HEAD
 // LET AND VAR
+=======
+>>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 {
     var globalVar = "Global variable";
@@ -61,12 +64,18 @@ console.log(globalVar);     // avialable
 console.log(globalLet);     // not avialable
 
 
+<<<<<<< HEAD
 // CONSTANT
+=======
+>>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 const a = 'b'; // it cannot chenge from ecmascript6
 
 
+<<<<<<< HEAD
 // CREATE OBJECTS WITH VARIABLES
+=======
+>>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // -es6
 let name = "andres";
 let age = 23;
@@ -77,7 +86,10 @@ console.log(obj);
 console.log(obj2);
 
 
+<<<<<<< HEAD
 // ARROW FUNCTIONS
+=======
+>>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // -es6
 let names = [
     {name: "Scarlette", age: 25},
@@ -94,7 +106,11 @@ const arrow_f2 = element => console.log(`${element}`)
 arrow_f("Boni bb", 14);
 arrow_f2('Print this');
 
+<<<<<<< HEAD
 // ARROW FUNCTIONS
+=======
+
+>>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 const helloPromise = () =>{
     return new Promise((resolve, reject)=>{
