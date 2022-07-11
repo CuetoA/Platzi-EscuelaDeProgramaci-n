@@ -49,10 +49,7 @@ let new_team = ['Pablo', ...team1, ...team2]
 console.log(new_team);
 
 
-<<<<<<< HEAD
 // LET AND VAR
-=======
->>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 {
     var globalVar = "Global variable";
@@ -64,18 +61,12 @@ console.log(globalVar);     // avialable
 console.log(globalLet);     // not avialable
 
 
-<<<<<<< HEAD
 // CONSTANT
-=======
->>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 const a = 'b'; // it cannot chenge from ecmascript6
 
 
-<<<<<<< HEAD
 // CREATE OBJECTS WITH VARIABLES
-=======
->>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // -es6
 let name = "andres";
 let age = 23;
@@ -86,10 +77,7 @@ console.log(obj);
 console.log(obj2);
 
 
-<<<<<<< HEAD
 // ARROW FUNCTIONS
-=======
->>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // -es6
 let names = [
     {name: "Scarlette", age: 25},
@@ -106,11 +94,7 @@ const arrow_f2 = element => console.log(`${element}`)
 arrow_f("Boni bb", 14);
 arrow_f2('Print this');
 
-<<<<<<< HEAD
 // ARROW FUNCTIONS
-=======
-
->>>>>>> 804a9c2860ecbb35e8b94b5c810fe1b10e8486ca
 // +es6
 const helloPromise = () =>{
     return new Promise((resolve, reject)=>{
@@ -126,3 +110,47 @@ helloPromise()
     .then(response => console.log(response))
     .then(() => console.log('void'))
     .catch(error => console.log(error));
+
+
+// OOP
+// +es6
+class calculator {
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    sum(valueA, valueA){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB
+    }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2,2));
+
+
+// MODULES
+// -es6
+const module= require('./module')
+console.log(module.hello());
+console.log(module.bye());
+// +es6
+import {hello} from './module';
+module();
+
+
+// -es6
+
+// +es6
+
+
+// -es6
+
+// +es6
+
+
+// -es6
+
+// +es6
