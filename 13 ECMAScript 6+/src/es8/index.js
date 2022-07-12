@@ -38,3 +38,14 @@ const helloAsync = async (number) => {
 
 helloAsync(1);  // This waits
 helloWorld(2);  // This doesnt
+
+
+const anotherAsyncF = async (number) => {
+    
+    try{
+        const hello = await helloWorld(number);
+        console.log(hello);
+    }catch (error){
+        console.log(error);
+    }
+};
