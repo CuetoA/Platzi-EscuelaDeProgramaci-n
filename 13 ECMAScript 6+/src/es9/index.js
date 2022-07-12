@@ -23,3 +23,19 @@ const obj1 = {
 }
 
 console.log(obj1)
+
+
+// PROMISE.FINALLY
+//      know when call has ended
+const helloWorld = () => {
+    return new Promise( (resolve, reject) => {
+        (true)
+        ? setTimeout( () => resolve("Hello there"), 3000)
+        : reject("Godby there")
+    });
+};
+
+helloWorld()
+    .then(response => console.log(`Response is: ${response}`))
+    .catch(error => console.log(`Error is: ${error}`))
+    .finally(() => console.log("It has finished"));     // needs to be function
