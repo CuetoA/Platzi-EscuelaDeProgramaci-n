@@ -7,9 +7,7 @@ function getFood(isFood){
         (isFood)
         ? resolve("Burger") 
         : reject ( "We don't have that food")
-        
     })
-
     return promise
 }
 
