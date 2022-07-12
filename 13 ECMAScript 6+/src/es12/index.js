@@ -23,7 +23,7 @@ const message = new Message();
 message.show('This string');
 
 
-// Promise anni
+// Promise any
 const promise1 = new Promise( (resolve, reject) => reject("1") );
 const promise2 = new Promise( (resolve, reject) => resolve("2") );
 const promise3 = new Promise( (resolve, reject) => resolve("3") );
