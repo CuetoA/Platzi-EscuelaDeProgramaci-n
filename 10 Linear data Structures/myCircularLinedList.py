@@ -6,20 +6,8 @@ class CircularLinkedList(LinkedList):
         super().__init__()
 
     def append(self, data):
-        node = Node(data, self.head)
-
-        if self.head == None:
-            self.head = node
-        else:
-            current = self.head
-            i = self.size
-
-            while current.next and i>=0:
-                current = current.next
-                i -= 1
-            current.next = node
-
-        self.size += 1
+        super().append(data, self.head)
+        
 
 
 if __name__ == "__main__":
