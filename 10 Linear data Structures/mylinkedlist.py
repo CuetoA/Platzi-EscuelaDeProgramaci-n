@@ -82,7 +82,7 @@ class LinkedList:
     def myPrint(self):
         myStr = ""
         for element in self.iter():
-            myStr += f"[{element[0]}, {element[1]}] -> "
+            myStr += f"[{element[0]}, {id(element[1])}] -> "
 
         print(myStr)
 
