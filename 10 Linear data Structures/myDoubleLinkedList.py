@@ -82,6 +82,12 @@ class DoubleLinkedList():
         print(f"data \"{data}\" not found")
         return 0
 
+    
+    def clear(self):
+        self.head = None
+        self.tail = None
+        self.size = 0
+
 
     def myPrint(self):
         myStr = ""
