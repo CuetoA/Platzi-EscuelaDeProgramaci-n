@@ -59,6 +59,7 @@ class LinkedList:
                     previous.next = current.next
                     self.size -= 1
                     print(f"deleted: {current.data}")
+                    break
 
             i -= 1
             previous = current
