@@ -29,6 +29,25 @@ class DoubleLinkedList():
         self.size += 1
     
 
+    def delete(self, data):
+        current = self.head
+        previous = self.head
+        i = self.size
+
+        while current and i>=0:
+            if current.data == data:
+                if current == self.head:
+                    self.head = current.next
+                else:
+                    previous.next = current.next
+                    self.size -= 1
+                    print(f"deleted: {current.data}")
+
+            i -= 1
+            previous = current
+            current = current.next
+
+
     def iter(self):
         current = self.head
         i = self.size
@@ -108,3 +127,6 @@ if __name__ == "__main__":
 
     myLinked.searchForward("you my ")
     myLinked.searchForward("nonestop")
+
+    myLinked.delete("you my ")
+    myLinked.myPrint()
