@@ -30,6 +30,13 @@ class Stack(DoubleLinkedList):
         while self.tail:
             self.pop()
         
+    
+    def isElement(self, data):
+        for element in self.iter():
+            if element.data == data:
+                return True
+        return False
+        
 
 
 
@@ -53,6 +60,12 @@ if __name__ == "__main__":
     newStack.pop()
     newStack.myPrint()
     newStack.peek()
+
+    element1 = "hey"
+    print(f'\nChecking if element \"{element1}\" is in stack: {newStack.isElement(element1)}')
+
+    element2 = "attention"
+    print(f'\nChecking if element \"{element2}\" is in stack: {newStack.isElement(element2)}')
 
     newStack.clearStack()
     newStack.myPrint()
