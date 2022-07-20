@@ -21,7 +21,22 @@ class MyArray:
 
     def __setitem__(self, index, newItem):
         self.items[index] = newItem
-        
+
+    def printArr(self):
+        message = "["
+        for element in self.items:
+            message += str(element) + ", "
+        message = message[:-2] + "]"
+        print(message)
+
+    def getSize(self):
+        counter = 0
+        element = self.items[counter]
+
+        while element:
+            counter += 1
+            element = self.items[counter]
+        return counter
 
     def __sum__(self):
         for i in range(self.__len__()):
