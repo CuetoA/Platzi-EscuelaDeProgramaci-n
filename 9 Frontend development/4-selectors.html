@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: purple;
+            background: papayawhip;
+        }
+        div > div{
+            color: navy;
+            background: fuchsia;
+        }
+        div > div > div{
+            color: teal;
+            background-color: blueviolet;
+        }
+        div + section{
+            background-color: chocolate;
+            color: black;
+        }
+        div ~ p{
+            color: wheat;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div>is awesome</div>
+        </div>
+        <section>and accesible</section>
+    </div>
+    <p>Selectors Class</p>
+
+    <div>
+        <h1>Combinator Selectors</h1>
+        <p>
+            A combinator selector is a way to make relationships between classes, like saying -Hey!
+             if you are my child do this instead of that- or -If you are near to me modify this- 
+        </p>
+        <br>
+        <p>
+            This normaly is done by: >, +, space, or ~.
+        </p>
+    </div>
+    
+</body>
+</html>
