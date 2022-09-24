@@ -11,6 +11,7 @@
             height: 60px;
             background-color: lightcyan;
             position: fixed;
+            text-align: center;
         }
         .container{
             width: 200px;
@@ -20,24 +21,50 @@
             top: 20px;
         }
         .item{
-            width: 20px;
-            height: 20px;
+            width: 75px;
+            height: 75px;
             background-color: palevioletred;
             position: absolute;
             right: 0;
+            top: 50%;
         }
         ul p{
             position: sticky;
             top: 0;
         }
+        #my_subject {
+            position: fixed;
+            right: 10%;
+            background-color: black;
+            color: white;
+        }
         
     </style>
 </head>
 <body>
-    <nav>   </nav>
+    <nav>
+        This is a fixed navbar element
+    </nav>
+
+    <div id="my_subject">
+        <h1>Positioners</h1>
+        <ul>
+            <li> <b> Static:    </b> Default html positioning                           </li>
+            <li> <b> Absolute:  </b> Relative to the nearest positioned ancestor        </li>
+            <li> <b> Relative:  </b> Elements relative to its initial position          </li>
+            <li> <b> Fixed:     </b> Elements that wont move even if the page changes   </li>
+            <li> <b> Sticky:    </b> Intermediate between Relative and fixed            </li>
+            <li> <b> Initial:   </b> ikdnf</li>
+            <li> <b> Inherital: </b> ikdnf</li>
+
+        </ul>
+    </div>
 
     <div class="container">
-        <div class="item">a</div>
+        This element is relative to the env
+        <div class="item">
+            this element is absolute
+        </div>
     </div>
 
     <p>What is Lorem Ipsum?
