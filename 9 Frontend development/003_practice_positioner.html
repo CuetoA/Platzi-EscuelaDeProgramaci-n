@@ -9,13 +9,13 @@
         #main_cont{
             width: 100%;
             position: fixed;
-            
-            text-align: center;
+            padding: 0px;
         }  
         nav {
             color: blueviolet;
-            background-color: black;
-
+            background-color: rgba(0, 0, 0, 0.8);
+            
+            text-align: center;
             font-size: xx-large;
             font-weight: bold;
         }
@@ -24,6 +24,48 @@
             color: orange;
             background-color: blueviolet;
         }
+        #sticky_cont h2{
+            text-align: center;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            margin-top: 17%;
+            float: left;
+            width: 50%;
+        }
+
+        .box {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+
+            background: red;
+            color: white;
+        }
+        #two {
+            top: 60px;
+            left: 60px;
+            position: relative;
+
+            background: blue;
+            font-size: x-small;
+        }
+
+        .note{
+            font-size: x-small;
+        }
+
+        .reference{
+            width: 70%;
+            color: blue;
+            font-size: large !important;
+        }
          
         
     </style>
@@ -31,11 +73,11 @@
 <body>
     <div id="main_cont">
         <nav>
-            <a>CSS Positioners</a>
+            <a>CSS Positioners</a> <a class="note">(this is a fixed element)</a>
         </nav>
     
         <div id="sticky_cont">
-            <h2>Types of Positioners</h2>
+            <h2>Types of Positioners <a class="note">(this is a fixed element)</a></h2> 
             <ul>
                 <li> <b> Static:    </b> Default html positioning                           </li>
                 <li> <b> Absolute:  </b> Relative to the nearest positioned ancestor        </li>
@@ -49,6 +91,35 @@
         </div>
     </div>
     
+    <div id="page_con" class="row">
+        <div class="column" style="background-color: rgba(255, 255, 0, 0.7);">
+            <div>
+                <div class="box"> Box 1</div>
+                <div class="box" id="two"> 
+                    Box 2: Displaced X quantity from origin but without affecting others. <br><br>
+                    <a class="note">(this is a relative element)</a>
+                </div>
+                <div class="box"> Box 3</div>
+                <div class="box"> Box 4</div>
+            </div>
+            
+            <div>
+                <div class="reference" style="background-color: turquoise;" id="two"> 
+                    <b> Reference url: </b>
+                    <ul>
+                        <li> <a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank"> Good position explanation and examples</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="background-color: rgba(4, 131, 4, 0.5);">
+            <b>Positioners are used to </b> stablish a relationship between an element and its context, this way we can 
+            display it the way we want. 
+            <br>
+            <br>
+            Now, lets analyze a sticky element:
+        </div>
+    </div>
 
 </body>
 </html>
