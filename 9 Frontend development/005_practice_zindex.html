@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html * {
+            background-color: black;
+            color: white;
+        }
+        #container{
+            justify-content: center;
+            text-align: center;
+        }
+        .block {
+            position: absolute;
+            top: -20px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7,43,144,1) 17%,rgb(2, 182, 218) 75% ,rgba(0,212,255,1) 100%);
+            color: white;
+            margin-left: 75px;
+            margin-right: auto;
+        }
+        .block:hover{
+            background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(7,43,144,1) 17%,rgb(2, 182, 218) 75% ,rgba(0,212,255,1) 100%);
+            left: 50px;
+        }
+        #c1 {
+            top: 200px;
+            z-index: 8;
+        }
+        #c2 {
+            top: 250px;
+            z-index: 7;
+        }
+        #c3 {
+            top: 300px;
+            z-index: 6;
+        }
+        #c4 {
+            top: 350px;
+            z-index: 5;
+        }
+        #c5 {
+            top: 400px;
+            z-index: 4;
+        }
+        #c6 {
+            top: 450px;
+            z-index: 3;
+        }
+        #c7 {
+            top: 500px;
+            z-index: 2;
+        }
+        #c8 {
+            top: 550px;
+            z-index: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Practicing z-index</h1>
+    <div>
+        <a href="https://cssgradient.io/">
+            Reference for gradients
+        </a>
+    </div>
+
+    <div id="container">
+        <div class="block" id="c1">  </div>
+        <div class="block" id="c2">  </div>
+        <div class="block" id="c3">  </div>
+        <div class="block" id="c4">  </div>
+        <div class="block" id="c5">  </div>
+        <div class="block" id="c6">  </div>
+        <div class="block" id="c7">  </div>
+        <div class="block" id="c8">  </div>
+    </div>
+</body>
+</html>
