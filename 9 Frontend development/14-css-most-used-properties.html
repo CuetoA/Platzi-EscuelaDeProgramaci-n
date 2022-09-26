@@ -4,34 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My card</title>
     <style>
+        html *{
+            background-color: black;
+        }
         section{
             width: 100%;
-            height: 100%;
-            background-color: black;
             display: flex;
             justify-content: center;
-            padding: 10px;
+            margin-top: 50px;
         }
         .card{
-            width: 350px;
-            height: 500px;
-            background-color: papayawhip;
+            width: 500px;
+            height: 700px;
+            background-color: black;
             border-radius: 20px;
             overflow: hidden;
-        }
-        .card img{
-            width: 100%;
 
+            border: 3px solid rgba(255, 255, 255, 0.85);
+        }
+        .card #background_img {
+            margin-top: -50px;
+            width: 100%;
+        }
+        .card #profile_img{
+            margin-top: -90px;
+            margin-left: 160px;
+            width: 170px;
+            border-radius: 50%;
+
+            border: 3px solid black
+        }
+        .card #profile_name{
+            color: white;
+            margin: 10px;
+            text-align: center;
+            font-size: xx-large;
+        }
+        .card #profile_info p:nth-child(2){
+            color: rgba(255, 255, 255, 0.83);
+            margin: -11px;
+            z-index:1;
+            text-align: center;
+        }
+        .card #profile_info p:nth-child(3){
+            color: white;
+            width: 70%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+        .card #links{
+            color: white;
+            display: flex;
+        }
+        .card #links a{
+            margin: auto;
+            position: relative;
+            bottom: -70px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <section>
         <div class="card">
-            <img class="background_image" src="https://media.blogto.com/articles/20201211-sunset.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" alt="">
+            <img id="background_img" src="https://media.blogto.com/articles/20201211-sunset.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" alt="background">
+            <img id="profile_img" src="https://media-exp1.licdn.com/dms/image/C4E03AQFFhoIGaSYW0Q/profile-displayphoto-shrink_800_800/0/1631849558068?e=1669852800&v=beta&t=N6fZ1sfxpgbnpQbe1q3ZPEaMa36VKg9ZH-ZicLSRUqk" alt="">
+
+            <div id="profile_info">
+                <p id="profile_name">Andrés Cueto</p>
+                <p> 🤖 Mechatronics engineer | 🚀 Former Entrepreneur</p>
+
+                <p>
+                    Proud nerd in search of improving the world through science and technology. 
+                    Currently working at avarchery to accelerate the learning curve in archers.
+                </p>
+            </div>
+
+            <div id="links">
+                <a href="https://drive.google.com/file/d/1NylwxH5dTVLDNSlKhuCDKIsaP-3kP13K/view?usp=sharing" target="_blank">Resumee</a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-cueto-estrada-4785b11b3/" target="_blank">Linkedin</a>
+                <a href="https://github.com/CuetoA" target="_blank">Github</a>
+            </div>
+            
         </div>
     </section>
 </body>
 </html>
+
+<!-- https://media.blogto.com/articles/20201211-sunset.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70 -->
