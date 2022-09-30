@@ -2,7 +2,7 @@
     --white:            #FFFFFF;
     --black:            #000000;
     --very-light-pink:  #C7C7C7;
-    --text-input-field: #F7F7F7;
+    --text-input-field: #F6F6F6;
     --hospital-green:   #ACD9B2;
     --soft-white:       #FAFAFA;
     --sm: 14px;
@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
 .logo{
     width: 150px;
@@ -75,6 +76,31 @@ body {
     color: var(--white);
     margin-top: 24px;
 }
+.email-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.email-img img{
+    width: 72px;
+}
+.foot-note{
+    font-size: var(--sm);
+}
+.foot-note span{
+    color: var(--very-light-pink);
+}
+.foot-note a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
 
 @media(max-width: 640px){
     .logo{
