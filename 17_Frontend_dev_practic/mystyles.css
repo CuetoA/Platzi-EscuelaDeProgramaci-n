@@ -26,6 +26,8 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+}
+.centered-form{
     justify-items: center;
 }
 .logo{
@@ -71,6 +73,15 @@ body {
     font-size: var(--md);
     font-weight: bold;
 }
+.secondary-button{
+    background-color: var(--text-input-field);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+.sign-up-button{
+    margin-top: 60px;
+}
+
 .login-button{
     background-color: var(--hospital-green);
     color: var(--white);
@@ -92,6 +103,7 @@ body {
 }
 .foot-note{
     font-size: var(--sm);
+    text-align: center;
 }
 .foot-note span{
     color: var(--very-light-pink);
@@ -105,5 +117,11 @@ body {
 @media(max-width: 640px){
     .logo{
         display: block;
+    }
+    .sign-up-button{
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 20px;
+        width: inherit;
     }
 }
