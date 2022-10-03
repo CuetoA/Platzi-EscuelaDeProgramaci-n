@@ -22,7 +22,13 @@ body {
     display: grid;
     place-items: center;
 }
-.form-container{
+.form,
+.form-spaced{
+    display: flex;
+    flex-direction: column;
+}
+.form-container, 
+.form-container-spaced{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -54,6 +60,9 @@ body {
     font-weight: bold;
     margin-bottom: 4px;
     margin-top: 20px;
+}
+.left-text{
+    text-align: left;
 }
 .input{
     background-color: var(--text-input-field);
@@ -123,5 +132,13 @@ body {
         bottom: 0px;
         margin-bottom: 20px;
         width: inherit;
+    }
+    .form-spaced{
+        height: 100%;
+        margin: 0;
+    }
+    .form-container-spaced{
+        height: 100%;
+        margin: 0;
     }
 }
