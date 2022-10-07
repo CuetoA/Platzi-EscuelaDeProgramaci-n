@@ -11,9 +11,9 @@
 }
 * {
     background-color: var(--soft-white);
+    font-family: 'Quicksand', sans-serif !important;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
 .login{
@@ -90,11 +90,13 @@ body {
 .sign-up-button{
     margin-top: 60px;
 }
-
 .login-button{
     background-color: var(--hospital-green);
     color: var(--white);
     margin-top: 24px;
+}
+.edit-button{
+    margin-top: 60px;
 }
 .email-img{
     width: 120px;
@@ -120,6 +122,11 @@ body {
 .foot-note a{
     color: var(--hospital-green);
     text-decoration: none;
+}
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 28px 0;
 }
 
 
