@@ -133,6 +133,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--test-size));
     gap: 30px;
+    place-content: center;
 }
 .product-card{
      width: var(--test-size);
