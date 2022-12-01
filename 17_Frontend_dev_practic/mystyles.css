@@ -17,7 +17,8 @@
 body {
     margin: 0;
 }
-.login{
+.login,
+.my-order{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -234,6 +235,36 @@ body {
 }
 .ul-exempt p:last-child{
     color: var(--hospital-green);
+}
+
+
+.my-order-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    width: 300px;
+}
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+.shopping-cart p:nth-child(2){
+    color: var(--very-light-pink);
+    margin-left: 20px;
+}
+.shopping-cart p:nth-child(3){
+    font-weight: bold;
+}
+.shopping-cart figure{
+    margin: 0;
+}
+.shopping-cart figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
 }
 
 
