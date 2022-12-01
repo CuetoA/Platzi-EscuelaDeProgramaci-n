@@ -250,6 +250,7 @@ body {
 .shopping-cart{
     display: grid;
     grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
 }
 .shopping-cart p:nth-child(2){
     color: var(--very-light-pink);
@@ -265,6 +266,17 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 20px;
+}
+
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: red;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 0 24px;
 }
 
 
