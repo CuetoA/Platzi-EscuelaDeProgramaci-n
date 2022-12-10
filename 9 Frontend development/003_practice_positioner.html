@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioners</title>
+    <style>
+        #main_cont{
+            width: 100%;
+            position: fixed;
+            padding: 0px;
+            z-index: 1;
+        }  
+        nav {
+            color: blueviolet;
+            background-color: rgba(0, 0, 0, 0.8);
+            
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #sticky_cont{
+            width: 40%;
+            color: orange;
+            background-color: blueviolet;
+        }
+        #sticky_cont h2{
+            text-align: center;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            margin-top: 17%;
+            float: left;
+            width: 50%;
+        }
+
+        .box {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+
+            background: red;
+            color: white;
+        }
+        #two {
+            top: 60px;
+            left: 60px;
+            position: relative;
+
+            background: blue;
+            font-size: x-small;
+        }
+
+        .note{
+            font-size: x-small;
+        }
+
+        .reference{
+            width: 70%;
+            color: blue;
+            font-size: large !important;
+        }
+        ul p{
+            z-index: 1;
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(183, 239, 183);
+            font-weight: bold;
+            position: sticky;
+            top: 10%;
+        }
+        footer{
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 50px;
+            font-size: x-large;
+        }
+        .lorem{
+            width: 50%;
+            text-align: justify;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main_cont">
+        <nav>
+            <a>CSS Positioners</a> <a class="note">(this is a fixed element)</a>
+        </nav>
+    
+        <div id="sticky_cont">
+            <h2>Types of Positioners <a class="note">(this is a fixed element)</a></h2> 
+            <ul>
+                <li> <b> Static:    </b> Default html positioning                           </li>
+                <li> <b> Absolute:  </b> Relative to the nearest positioned ancestor        </li>
+                <li> <b> Relative:  </b> Elements relative to its initial position          </li>
+                <li> <b> Fixed:     </b> Elements that wont move even if the page changes   </li>
+                <li> <b> Sticky:    </b> Intermediate between Relative and fixed            </li>
+                <li> <b> Initial:   </b> ikdnf</li>
+                <li> <b> Inherital: </b> ikdnf</li>
+    
+            </ul>
+        </div>
+    </div>
+    
+    <div id="page_con" class="row">
+        <div class="column" style="background-color: rgba(255, 255, 0, 0.7);">
+            <div>
+                <div class="box"> Box 1</div>
+                <div class="box" id="two"> 
+                    Box 2: Displaced X quantity from origin but without affecting others. <br><br>
+                    <a class="note">(this is a relative element)</a>
+                </div>
+                <div class="box"> Box 3</div>
+                <div class="box"> Box 4</div>
+            </div>
+            
+            <div>
+                <div class="reference" style="background-color: turquoise;" id="two"> 
+                    <b> Reference url: </b>
+                    <ul>
+                        <li> <a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank"> Good position explanation and examples</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="background-color: rgba(4, 131, 4, 0.5);">
+            <b>Positioners are used to </b> stablish a relationship between an element and its context, this way we can 
+            display it the way we want. 
+            <br>
+            <br>
+            Now, lets analyze a sticky element. List of stuff that:
+            <br>
+            <br>
+
+            <ul>
+                <p>I like</p>
+                <li>Scarlette</li>
+                <li>Tacos!</li>
+                <li>Studying</li>
+                <li>Archery</li>
+
+                <br>
+                <p>I want to do</p>
+                <li>Practice archery again</li>
+                <li>Visit to museums with Scarlette</li>
+                <li>Get high with Scarlette</li>
+                <li>Live in Canada</li>
+                <li>Ice skate</li>
+                <li>Swim in the ocean</li>
+                <li>Camp in the forest</li>
+                <li>Play gotcha</li>
+
+                <br>
+                <p>People I love</p>
+                <li>Scarlette</li>
+                <li>Trujis</li>
+                <li>Maxibu bby</li>
+                <li>Ivu</li>
+                <li>Rafita</li>
+                <li>Boni</li>
+
+                <br>
+                <p>Things I'd like to learn</p>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Software engineering</li>
+                <li>SQL</li>
+                <li>API's</li>
+                <li>Make web pages</li>
+
+                <br>
+                <p>Things I'd like to build</p>
+                <li>Archery app to improve trainings</li>
+                <li>Automated irrigation system</li>
+                <li>Robots</li>
+                <li>Light alarm</li>
+                <li>Self investing software</li>
+
+                <br>
+                <p>Goals as Serial entrepreneur</p>
+                <li>Create first entrepreneurship to learn</li>
+                <li>Create second entrepreneurship. Easy but cashy</li>
+                <li>Start resolving world problems such as</li>
+                <li>Economics for people</li>
+                <li>Sustainability</li>
+                <li>Multuculturality cooperation</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="lorem">
+        <b>This is all we're going to cover today. TY TY.</b> 
+        <br><br><br>
+        From this on we'll print:  
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, tempora nisi ipsam molestiae eum esse incidunt? Laborum labore itaque illo inventore minus incidunt officia suscipit, impedit natus animi distinctio doloribus. <br>
+       
+    </div>
+    
+    <footer>
+        Made with love
+    </footer>
+</body>
+</html>

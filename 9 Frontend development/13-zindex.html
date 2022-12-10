@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html * {
+            color: white;
+            font-size: large;
+        }
         div{
             position: absolute;
             background-color: cornflowerblue;
@@ -20,13 +24,13 @@
         .red{
             width: 200px;
             height: 200px;
-            background-color: red;
+            background-color: rgba(255, 0, 0, 0.5);
             z-index: 5;
         }
         .blue{
             width: 200px;
             height: 200px;
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0.5);
             z-index: 4;
             top: 100px;
             left: 100px;
@@ -35,7 +39,7 @@
             top: 100px;
             width: 200px;
             height: 200px;
-            background-color: yellow;
+            background-color: rgba(255, 255, 0, 0.5);
             z-index: 6;
         }
     </style>
