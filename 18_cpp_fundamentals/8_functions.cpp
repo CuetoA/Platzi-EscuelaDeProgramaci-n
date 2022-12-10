@@ -5,7 +5,7 @@ int multiply(int a, int b){
     return a * b;
 }
 
-float divide(float a, float b, string st="holi" ){
+void divide(float a, float b, string st="holi" ){
     cout << "BTW, your default message is: " << st << endl;
     cout << "Division:       " << a/b << endl;
 }
