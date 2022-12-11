@@ -15,8 +15,8 @@ int main(){
     cout << "   MY_STR1[1] in memory address:     " << (int *) &my_str1[1] << endl;
     cout << "   MY_STR1[2] in memory address:     " << (int *) &my_str1[2] << endl;
     cout << "   MY_STR1[3] in memory address:     " << (int *) &my_str1[3] << endl;
-    cout << "   MY_CHR1 real address in memory:   " << (int *) &my_chr1     << endl;
-    cout << "   MY_CHR2 real address in memory:   " << (int *) &my_chr2     << endl;
+    cout << "   MY_CHR1 real address in memory:   " << (int *) &my_chr1    << endl;
+    cout << "   MY_CHR2 real address in memory:   " << (int *) &my_chr2    << endl;
     cout << endl;
 
     cout << "Alanysis of MY_STR2 : " << my_str2 << endl;
