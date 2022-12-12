@@ -20,7 +20,4 @@ int main(){
 
     cout << "basket:         " << basket << endl;
     cout << "another_basket: " << another_basket << endl;
-
-
-
 }
