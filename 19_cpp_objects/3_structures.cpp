@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/*
+    Like an arry with different datatypes
+*/
+
 struct Person{
     string name;
     int    age; 
