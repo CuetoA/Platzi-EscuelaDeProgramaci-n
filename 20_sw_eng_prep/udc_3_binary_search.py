@@ -27,7 +27,8 @@ def binary_search(input_array, value):
         i = start + (end - start)//2
         print(f"i is {i}")
 
-        if i+1 < start  or  i >= end:
+        # if i+1 < start  or  i >= end:
+        if  start > end:
             return -1
 
         if input_array[i] == value:
@@ -41,5 +42,5 @@ def binary_search(input_array, value):
 test_list = [1,3,9,11,15,19,29]
 test_val1 = 25
 test_val2 = 15
-print( binary_search(test_list, test_val2) )
 print( binary_search(test_list, test_val1) )
+print( binary_search(test_list, test_val2) )
