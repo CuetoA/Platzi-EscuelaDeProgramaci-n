@@ -1,3 +1,13 @@
+/*
+    Object life-cycle:
+    - Set memory space
+    - Call constructor
+    - Activity period
+    - Call destructor 
+    - Free memory space
+*/
+
+
 #include <iostream>
 #include <stdio.h>
 #include <string>
