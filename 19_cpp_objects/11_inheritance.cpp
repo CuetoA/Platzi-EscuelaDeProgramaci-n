@@ -7,22 +7,22 @@ using namespace std;
 
 
 class Animal{
-private:
-    static int number_animals;
-    string food;
+    protected:
+        static int number_animals;
+        string food;
 
-public:
-    Animal();
-    ~Animal();
-    static int getNumberAnimals();
+    public:
+        Animal();
+        ~Animal();
+        static int getNumberAnimals();
 
-    string getFood(){
-        return this->food;
-    };
+        string getFood(){
+            return this->food;
+        };
 
-    void eat(){
-        cout << "This animal is eating " << this->food << "... ñom ñom " << endl;
-    };
+        void eat(){
+            cout << "This animal is eating " << this->food << "... ñom ñom " << endl;
+        };
 };
 
 int Animal::number_animals = 0;
@@ -43,12 +43,53 @@ int Animal::getNumberAnimals (){
 
 
 
+class Herbivorous : Animal {
+    public:
+    Herbivorous() : Animal() {
+        this->food = "plants";
+    }
+
+    void pasture(){
+        cout << "This animal is pasting" << endl;
+    }
+};
+
+
+class Carnivorois : Animal {
+    public:
+    Carnivorois() : Animal(){
+        this-> food = "meat";
+    }
+
+    void hunt(){
+        cout << "This animal is hunting" << endl; 
+    }
+};
+
+
+
+
 int main(){
     Animal *my_new_animal = new Animal();
+    Herbivorous *new_herb = new Herbivorous();
+    Carnivorois *new_carb = new Carnivorois();
     cout << "Number of animals is " << Animal::getNumberAnimals() << endl;
 
     my_new_animal->eat();
+    new_herb->pasture();
+    new_carb->hunt();
 
     delete my_new_animal;
     cout << "Number of animals is " << Animal::getNumberAnimals() << endl;
 }
+
+/*
+    Here we learned multiple things:
+    1.- We can't leave null elements even if they're static
+    2.- When creating an object we have:
+        Object <name> = new Object();
+          |                    |
+          v                    v
+        The object type ||  Literally this is the constructur
+    3.- how to make inheritance
+*/
