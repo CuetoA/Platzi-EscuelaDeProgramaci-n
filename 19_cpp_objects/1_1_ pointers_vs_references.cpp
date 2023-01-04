@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     // References
-    //      If you change meal food changes too cs it is a REFERENCE
+    //      If you change meal, food changes too cs it is a REFERENCE
     cout << "Pointer:" << endl;
     string food = "Pizza";
     string &meal = food;
