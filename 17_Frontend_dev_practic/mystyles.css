@@ -2,7 +2,7 @@
     --white:            #FFFFFF;
     --black:            #000000;
     --very-light-pink:  #C7C7C7;
-    --text-input-field: #F6F6F6;
+    --text-input-field: #F0F0F0;
     --hospital-green:   #ACD9B2;
     --soft-white:       #FAFAFA;
     --sm: 14px;
@@ -24,6 +24,9 @@ body {
     display: grid;
     place-items: center;
 }
+
+
+
 .form,
 .form-spaced{
     display: flex;
@@ -251,6 +254,8 @@ body {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
+    margin-bottom: 14px;
+    align-items: center;
 }
 .shopping-cart p:nth-child(2){
     color: var(--very-light-pink);
@@ -268,15 +273,31 @@ body {
     border-radius: 20px;
 }
 
+
 .order{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 16px;
     align-items: center;
-    background-color: red;
+    background-color: var(--text-input-field);
     border-radius: 8px;
     margin-bottom: 24px;
     padding: 0 24px;
+}
+.order p, .order p span{
+    background: none;
+}
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.order p span:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+}
+.order p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
 }
 
 
