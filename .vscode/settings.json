@@ -7,6 +7,10 @@
         "streambuf": "c",
         "type_traits": "c",
         "iostream": "cpp",
+<<<<<<< HEAD
         "new": "cpp"
+=======
+        "iosfwd": "cpp"
+>>>>>>> af93aad81132e2e1922534ffa947f81bdc05d628
     }
 }
