@@ -326,6 +326,30 @@ body {
 }
 
 
+.menu{
+    display: none;
+}
+.navbar-logo{
+    width: 100px ;
+}
+nav, .left-navbar{
+    display: flex;
+}
+.left-navbar ul, 
+.right-navbar ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.left-navbar ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    margin: 10px;
+}
+
+
 @media(max-width: 640px){
     .logo{
         display: block;
