@@ -38,3 +38,18 @@ int main(){
     cout << "   complete name: " << boni -> name << endl;
     cout << "   complete age:  " << boni -> age  << endl << endl;
 }
+
+
+/*
+    Create variables in compilation time or dynamic memory:
+    - Compilation time:
+        it saves the space since the moment we're programming
+        Persona p = Persona();
+
+    - Dynamic memory:
+        it creates the object and uses memory untill the programm is running
+        Persona *p = new Persona(); 
+
+        we use the word new to indicate that we're creating a new object called Persona
+    
+*/

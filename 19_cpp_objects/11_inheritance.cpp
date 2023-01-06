@@ -30,20 +30,22 @@ int Animal::number_animals = 0;
 Animal::Animal (){
     cout << "Creating new animal" << endl;
     number_animals += 1;
-}
+};
 
 Animal::~Animal (){
     cout << "Deleting new animal" << endl;
     number_animals -= 1;
-}
+};
 
 int Animal::getNumberAnimals (){
     return number_animals;
-}
+};
 
 
 
-class Herbivorous : Animal {
+
+
+class Herbivorous : public Animal {
     public:
     Herbivorous() : Animal() {
         this->food = "plants";
@@ -55,7 +57,7 @@ class Herbivorous : Animal {
 };
 
 
-class Carnivorois : Animal {
+class Carnivorois : public Animal {
     public:
     Carnivorois() : Animal(){
         this-> food = "meat";
@@ -68,16 +70,40 @@ class Carnivorois : Animal {
 
 
 
+class Omnivorous : public Herbivorous, public Carnivorois {
+    public:
+    Omnivorous(): Herbivorous(), Carnivorois() {}
+
+    void eat(){
+        this->Herbivorous::eat();
+        this->Herbivorous::eat();
+    }
+
+};
+
+
 
 int main(){
     Animal *my_new_animal = new Animal();
     Herbivorous *new_herb = new Herbivorous();
     Carnivorois *new_carb = new Carnivorois();
+    Omnivorous *new_omn   = new Omnivorous();
+
     cout << "Number of animals is " << Animal::getNumberAnimals() << endl;
 
     my_new_animal->eat();
+    cout << endl;
+
     new_herb->pasture();
+    new_herb->eat();
+    cout << endl;
+
     new_carb->hunt();
+    new_carb->eat();
+    cout << endl;
+
+    // new_omn->Herbivorous::eat();
+    new_omn->eat();
 
     delete my_new_animal;
     cout << "Number of animals is " << Animal::getNumberAnimals() << endl;
