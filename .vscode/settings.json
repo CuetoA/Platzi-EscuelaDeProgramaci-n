@@ -6,6 +6,7 @@
         "limits": "c",
         "streambuf": "c",
         "type_traits": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp"
     }
 }
