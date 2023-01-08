@@ -408,7 +408,7 @@ nav, .left-navbar{
     border-radius: 0 0 20px 20px;
 }
 .product-detail > .image-wrapper img{
-    height: inherit;
+    width: 100%;
 }
 .product-detail > .close-icon{
     width: 30px;
@@ -486,5 +486,11 @@ nav, .left-navbar{
     }
     .nav-email{
         display: none;
+    }
+    .product-detail{
+        width: 100%;
+    }
+    .product-detail > .image-wrapper img{
+        height: inherit;
     }
 }
