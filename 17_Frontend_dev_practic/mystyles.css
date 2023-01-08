@@ -307,6 +307,9 @@ body {
     font-size: var(--sm);
     color: var(--very-light-pink);
 }
+.order{
+    text-align: right;
+}
 
 
 
@@ -400,6 +403,7 @@ nav, .left-navbar{
 
 .product-detail{
     width: 360px;
+    height: 100vh;
 }
 .product-detail > .image-wrapper{
     width: inherit;
@@ -450,6 +454,10 @@ nav, .left-navbar{
     background-color: var(--very-light-pink);
     margin: 0 5px 0 5px;
     border-radius: 5px;
+}
+
+.arrow-icon{
+    transform: rotate(180deg);
 }
 
 
