@@ -420,7 +420,7 @@ nav, .left-navbar{
     left: 4px;
 }
 .product-detail-information{
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 .product-detail-information p{
     font-size: var(--md);
@@ -436,6 +436,21 @@ nav, .left-navbar{
     margin-bottom: 60px;
 }
 
+.image-counter-wrapper{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.image-counter-wrapper div{
+    width: 8px;
+    height: 8px;
+    background-color: var(--very-light-pink);
+    margin: 0 5px 0 5px;
+    border-radius: 5px;
+}
 
 
 @media(max-width: 640px){
