@@ -1,0 +1,4 @@
+Sorting algorithms:
+- Buble sort: Compares two elements and exchange them over and over again O(n**2)
+- Merge sort: Divides the elements over and over again until having arrs of 2 and comparing them O(n logn )
+- Quick sort: Takes a pivot to make all elements before it lower than the pivot and above it bigger than it O(n**2)
