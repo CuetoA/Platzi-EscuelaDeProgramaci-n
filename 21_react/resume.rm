@@ -1,0 +1,4 @@
+- jsx:          html and css inside js structure
+- virtual DOM:  Copy of real DOM that enables faster calculus and comparishons,allowing component render.
+- state:        The place were we save and update the users information
+- events:       Computer events that trigger biheviours
