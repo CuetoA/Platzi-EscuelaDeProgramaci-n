@@ -3,3 +3,4 @@ __pycache__
 *.exe
 Test.txt
 venv
+node_modules
