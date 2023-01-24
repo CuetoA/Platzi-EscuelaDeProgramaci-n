@@ -2,7 +2,11 @@ import React from 'react';
 
 const App = () => {
     return(
-        <h1>Hola mundo</h1>
+        <div>
+            <h1>Hola mundo</h1>
+            <p>kjdsfbefjn</p>
+        </div>
+        
     );
 }
 

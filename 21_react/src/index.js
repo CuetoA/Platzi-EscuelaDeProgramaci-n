@@ -1,6 +1,7 @@
 import React from "react";
-import ReactDOM from "react";
+// import ReactDOM from "react";
 import App from './components/app';
+var ReactDOM = require('react-dom');
 
-ReactDOM.render(<App />, document.getElementById("App"));
-console.log("im inside index.js jeje");
+
+ReactDOM.render(<App/>, document.getElementById("App"));
